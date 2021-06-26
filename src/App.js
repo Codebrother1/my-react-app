@@ -1,17 +1,27 @@
 import logo from './logo.svg';
+import { Greeting } from './Greeting'
 import './App.css';
 
+
+
+
 function App() {
+
+
+  let adjective = 'cool';
+  let url = "https://reactjs.org";
   return (
     <div className="App">
       <header className="App-header">
+        <Greeting/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+         This is so {adjective}!
         </p>
+        
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href={url}
           target="_blank"
           rel="noopener noreferrer"
         >
